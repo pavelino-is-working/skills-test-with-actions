@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install pytest==0.4.1
+          pip install pytest==8.4.1 
           pip install coverage==7.9
           pip install pytest-cov==6.2.1 
       - name: Run test and generate coverage details
@@ -34,3 +34,4 @@ jobs:
 
       - name: Fail if below threshold
         run: coverage report --fail-under=90
+        
